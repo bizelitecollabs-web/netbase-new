@@ -39,7 +39,7 @@ const state = {
 };
 
 const merchant = {
-  vpa: "netbase@upi",
+  vpa: "prashant166@ptaxis",
   name: "netbase",
 };
 
