@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>netbase - 2GB Daily Data Recharge</title>
+    <meta
+      name="description"
+      content="Recharge Jio, Airtel, and Vi long-validity 2GB daily data packs with UPI."
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg?v=3" />
+    <link rel="shortcut icon" href="./favicon.svg?v=3" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#recharge" aria-label="netbase home">
+          <span class="brand-icon">n</span>
+          <span>
+            <strong>netbase</strong>
+            <small>Recharge offers</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#recharge">Recharge</a>
+          <a href="#ott">OTT</a>
+          <a href="#compare">Savings</a>
+          <a href="#support">Support</a>
+        </nav>
+
+        <span class="header-chip" aria-label="Indian flag">
+          <img class="flag-icon" src="./assets/indian-flag.svg" alt="Indian flag" />
+        </span>
+      </header>
+
+      <main>
+        <section class="checkout-layout" id="recharge" aria-labelledby="pageTitle">
+          <div class="main-column">
+            <section class="hero-panel">
+              <p class="eyebrow">2GB daily data + OTT</p>
+              <h1 id="pageTitle"><span>Recharge once.</span><span>Stream for months.</span></h1>
+              <p><span>Get 2GB/day, unlimited calls,</span><span>and 22 OTT apps with every pack.</span></p>
+              <div class="hero-image-slot">
+                <img src="./assets/digital-bharat-recharge.png" alt="Digital Bharat recharge theme" />
+              </div>
+            </section>
+
+            <form class="recharge-card" id="rechargeForm" novalidate>
+              <div class="card-title">
+                <h2>Start recharge</h2>
+                <div class="title-badges">
+                  <span>22 OTT apps free</span>
+                  <span>Unlimited 5G</span>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label for="mobileNumber">Mobile number</label>
+                <div class="phone-input">
+                  <span>+91</span>
+                  <input
+                    id="mobileNumber"
+                    name="mobileNumber"
+                    type="tel"
+                    inputmode="numeric"
+                    autocomplete="tel"
+                    maxlength="10"
+                    placeholder="9876543210"
+                    aria-describedby="mobileError"
+                  />
+                </div>
+                <p class="input-error" id="mobileError" role="alert"></p>
+              </div>
+
+              <div class="section-picker">
+                <div class="picker-head">
+                  <strong>Operator</strong>
+                </div>
+                <div class="operator-grid" role="radiogroup" aria-label="Choose operator">
+                  <button class="operator-card active" type="button" data-operator="jio" aria-pressed="true">
+                    <span class="operator-mark logo-tile"><img src="./assets/jio-logo.webp" alt="Jio logo" /></span>
+                    <span>
+                      <strong>Jio</strong>
+                      <small>2GB/day pack</small>
+                    </span>
+                    <i data-lucide="check"></i>
+                  </button>
+                  <button class="operator-card" type="button" data-operator="airtel" aria-pressed="false">
+                    <span class="operator-mark logo-tile"><img src="./assets/airtel-logo.png" alt="Airtel logo" /></span>
+                    <span>
+                      <strong>Airtel</strong>
+                      <small>2GB/day pack</small>
+                    </span>
+                    <i data-lucide="check"></i>
+                  </button>
+                  <button class="operator-card" type="button" data-operator="vi" aria-pressed="false">
+                    <span class="operator-mark logo-tile"><img src="./assets/vi-logo.jpg" alt="Vi logo" /></span>
+                    <span>
+                      <strong>Vi</strong>
+                      <small>2GB/day pack</small>
+                    </span>
+                    <i data-lucide="check"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="section-picker">
+                <div class="picker-head">
+                  <strong>Plan</strong>
+                </div>
+                <div class="plan-grid" role="radiogroup" aria-label="Choose plan">
+                  <button class="plan-card active" type="button" data-plan="six" aria-pressed="true">
+                    <span class="plan-name">6 months</span>
+                    <span class="plan-price">&#8377;599</span>
+                    <span class="plan-meta">180 days, 360GB total, OTT included</span>
+                    <span class="save-pill" data-saving-six>Save &#8377;1,242</span>
+                  </button>
+                  <button class="plan-card" type="button" data-plan="year" aria-pressed="false">
+                    <span class="plan-name">1 year</span>
+                    <span class="plan-price">&#8377;999</span>
+                    <span class="plan-meta">365 days, 730GB total, OTT included</span>
+                    <span class="save-pill" data-saving-year>Save &#8377;2,600</span>
+                  </button>
+                </div>
+              </div>
+
+              <button class="primary-button" type="submit">
+                <i data-lucide="wallet"></i>
+                Pay with UPI
+              </button>
+            </form>
+          </div>
+
+          <aside class="summary-panel" aria-label="Selected recharge summary">
+            <div class="visual-card">
+              <div class="phone-shape">
+                <div class="phone-head">
+                  <span data-visual-operator>Jio</span>
+                  <img src="./assets/jio-logo.webp" alt="Jio logo" data-visual-logo />
+                  <strong>2GB/day</strong>
+                </div>
+                <div class="day-ring">
+                  <span data-visual-days>180</span>
+                  <small>days</small>
+                </div>
+                <div class="phone-row">
+                  <span>Pay</span>
+                  <strong data-visual-price>&#8377;599</strong>
+                </div>
+              </div>
+              <div class="floating-chip chip-data"><i data-lucide="wifi"></i> Daily data</div>
+              <div class="floating-chip chip-calls"><i data-lucide="phone-call"></i> Unlimited calls</div>
+              <div class="floating-chip chip-ott"><i data-lucide="play-square"></i> 22 OTT apps</div>
+            </div>
+
+            <div class="summary-card">
+              <div class="summary-logo-title">
+                <img src="./assets/jio-logo.webp" alt="Jio logo" data-summary-logo />
+                <div>
+                  <p class="eyebrow">Your offer</p>
+                  <h2 data-summary-title>Jio 6 months</h2>
+                </div>
+              </div>
+              <dl class="summary-list">
+                <div>
+                  <dt>Real price</dt>
+                  <dd data-summary-real>&#8377;1,841</dd>
+                </div>
+                <div>
+                  <dt>Offer price</dt>
+                  <dd data-summary-offer>&#8377;599</dd>
+                </div>
+                <div class="positive-row">
+                  <dt>You save</dt>
+                  <dd data-summary-saving>&#8377;1,242</dd>
+                </div>
+              </dl>
+              <div class="benefit-list">
+                <span><i data-lucide="database"></i><strong data-summary-data>360GB</strong> total data</span>
+                <span><i data-lucide="calendar-check"></i><strong data-summary-days>180 days</strong> validity</span>
+                <span><i data-lucide="play-square"></i><strong>22 apps</strong> OTT access</span>
+                <span><i data-lucide="badge-percent"></i><strong data-summary-discount>67% off</strong> discount</span>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="order-page" id="orderPage" aria-labelledby="orderTitle" hidden>
+          <button class="back-button" type="button" id="backToRecharge">
+            <i data-lucide="arrow-left"></i>
+            Back
+          </button>
+
+          <div class="order-layout">
+            <section class="order-card">
+              <div class="order-brand-row">
+                <img src="./assets/jio-logo.webp" alt="Jio logo" data-order-logo />
+                <div>
+                  <p class="eyebrow">Order summary</p>
+                  <h2 id="orderTitle">Review and pay</h2>
+                </div>
+              </div>
+
+              <dl class="order-list">
+                <div>
+                  <dt>Mobile number</dt>
+                  <dd data-order-mobile>+91 9876543210</dd>
+                </div>
+                <div>
+                  <dt>Operator</dt>
+                  <dd data-order-operator>Jio</dd>
+                </div>
+                <div>
+                  <dt>Pack</dt>
+                  <dd data-order-pack>6 months · 180 days</dd>
+                </div>
+                <div>
+                  <dt>Includes</dt>
+                  <dd>2GB/day + calls + OTT</dd>
+                </div>
+                <div class="positive-row">
+                  <dt>Saved</dt>
+                  <dd data-order-saving>&#8377;1,242</dd>
+                </div>
+              </dl>
+
+              <div class="pay-total">
+                <span>Total to pay</span>
+                <strong data-order-total>&#8377;599</strong>
+              </div>
+
+              <button class="primary-button full-width" type="button" id="openUpiApps">
+                <i data-lucide="smartphone"></i>
+                Pay &#8377;599
+              </button>
+
+              <div class="network-logo-row" aria-label="Supported networks">
+                <span>Supported on</span>
+                <div>
+                  <img src="./assets/jio-logo.webp" alt="Jio" />
+                  <img src="./assets/airtel-logo.png" alt="Airtel" />
+                  <img src="./assets/vi-logo.jpg" alt="Vi" />
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="ott-section" id="ott" aria-labelledby="ottTitle">
+          <div class="ott-copy">
+            <p class="eyebrow">Entertainment bundle</p>
+            <h2 id="ottTitle">22 OTT apps free.</h2>
+            <p>Streaming access is included with every recharge.</p>
+          </div>
+
+          <div class="ott-grid" aria-label="Sample OTT apps">
+            <article><span>Z5</span><strong>ZEE5</strong></article>
+            <article><span>SL</span><strong>SonyLIV</strong></article>
+            <article><span>SN</span><strong>Sun NXT</strong></article>
+            <article><span>LP</span><strong>Lionsgate</strong></article>
+            <article><span>D+</span><strong>Discovery+</strong></article>
+            <article><span>HC</span><strong>Hoichoi</strong></article>
+            <article><span>EN</span><strong>Eros Now</strong></article>
+            <button class="ott-more-button" type="button" id="showOttApps">
+              <span>14+</span><strong>See more</strong>
+            </button>
+          </div>
+        </section>
+
+        <section class="after-payment-section" id="afterPaymentDetails" hidden>
+          <aside class="promise-card">
+            <h3>After payment</h3>
+            <p>Recharge and OTT access details are sent after payment confirmation.</p>
+            <div class="promise-list">
+              <span><i data-lucide="lock-keyhole"></i> Amount sent with UPI link</span>
+              <span><i data-lucide="receipt-text"></i> Order ID after payment</span>
+              <span><i data-lucide="play-square"></i> 22 OTT apps included</span>
+              <span><i data-lucide="rotate-ccw"></i> Refund if recharge fails</span>
+            </div>
+          </aside>
+        </section>
+
+        <section class="comparison-section" id="compare" aria-labelledby="compareTitle">
+          <div class="saving-hero">
+            <p class="eyebrow">Savings</p>
+            <h2 id="compareTitle">See what you save before paying.</h2>
+            <span>Up to &#8377;2,600 off</span>
+          </div>
+
+          <div class="compare-grid">
+            <article class="saving-card">
+              <img src="./assets/jio-logo.webp" alt="Jio logo" />
+              <div>
+                <h3>Jio</h3>
+                <p>6 months <strong>&#8377;1,242 saved</strong></p>
+                <p>1 year <strong>&#8377;2,600 saved</strong></p>
+              </div>
+            </article>
+
+            <article class="saving-card">
+              <img src="./assets/airtel-logo.png" alt="Airtel logo" />
+              <div>
+                <h3>Airtel</h3>
+                <p>6 months <strong>&#8377;1,499 saved</strong></p>
+                <p>1 year <strong>&#8377;2,600 saved</strong></p>
+              </div>
+            </article>
+
+            <article class="saving-card">
+              <img src="./assets/vi-logo.jpg" alt="Vi logo" />
+              <div>
+                <h3>Vi</h3>
+                <p>6 months <strong>&#8377;1,531 saved</strong></p>
+                <p>1 year <strong>&#8377;2,600 saved</strong></p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="support-section" id="support" aria-label="Support highlights">
+          <div class="support-intro">
+            <p class="eyebrow">Help desk</p>
+            <h2>Quick help after payment.</h2>
+          </div>
+
+          <div class="support-pill-grid">
+            <article>
+              <span><i data-lucide="timer-reset"></i></span>
+              <div>
+                <h3>Live status</h3>
+                <p>Payment, processing, active.</p>
+              </div>
+            </article>
+            <article>
+              <span><i data-lucide="message-circle"></i></span>
+              <div>
+                <h3>AI support</h3>
+                <p>Plans, OTT, refund, UPI.</p>
+              </div>
+            </article>
+            <article>
+              <span><i data-lucide="shield-check"></i></span>
+              <div>
+                <h3>Refund cover</h3>
+                <p>Returned if recharge fails.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-brand">
+          <strong>netbase</strong>
+          <p>Independent recharge offers for Jio, Airtel and Vi users.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer links">
+          <button type="button" data-info-modal="about">About us</button>
+          <button type="button" data-info-modal="contact">Contact</button>
+          <button type="button" data-info-modal="privacy">Privacy Policy</button>
+          <button type="button" data-info-modal="terms">Terms</button>
+          <button type="button" data-info-modal="refund">Refund Policy</button>
+        </nav>
+
+        <p class="footer-note">
+          Netbase is not an official Jio, Airtel or Vi website. Recharge activation, OTT benefits and offers may vary by operator, circle and payment status.
+        </p>
+      </footer>
+    </div>
+
+    <div class="modal" id="upiModal" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="upi-sheet" role="dialog" aria-modal="true" aria-labelledby="upiTitle">
+        <button class="icon-button" type="button" data-close-modal aria-label="Close UPI apps">
+          <i data-lucide="x"></i>
+        </button>
+
+        <p class="eyebrow">Choose UPI app</p>
+        <h2 id="upiTitle">Pay <span data-modal-amount>&#8377;599</span></h2>
+        <p class="sheet-copy">The amount is added to the UPI request for this order.</p>
+
+        <div class="upi-app-grid" aria-label="UPI app options">
+          <button type="button" data-upi-app="gpay">
+            <span>G</span>
+            Google Pay
+          </button>
+          <button type="button" data-upi-app="phonepe">
+            <span>P</span>
+            PhonePe
+          </button>
+          <button type="button" data-upi-app="paytm">
+            <span>Pt</span>
+            Paytm
+          </button>
+          <button type="button" data-upi-app="bhim">
+            <span>B</span>
+            BHIM
+          </button>
+          <button class="wide-app" type="button" data-upi-app="any">
+            <span><i data-lucide="smartphone"></i></span>
+            Any UPI app
+          </button>
+        </div>
+
+        <div class="payment-status" id="paymentStatus">
+          <span></span>
+          Waiting for app selection
+        </div>
+      </section>
+    </div>
+
+    <div class="modal ott-modal" id="ottModal" hidden>
+      <div class="modal-backdrop" data-close-ott></div>
+      <section class="ott-sheet" role="dialog" aria-modal="true" aria-labelledby="ottModalTitle">
+        <button class="icon-button" type="button" data-close-ott aria-label="Close OTT apps popup">
+          <i data-lucide="x"></i>
+        </button>
+
+        <p class="eyebrow">Entertainment bundle</p>
+        <h2 id="ottModalTitle">All 22 OTT apps</h2>
+        <p class="sheet-copy">These streaming apps are included with the recharge bundle after payment confirmation.</p>
+        <div class="ott-full-grid" id="ottFullGrid" aria-label="All included OTT apps"></div>
+      </section>
+    </div>
+
+    <div class="modal info-modal" id="infoModal" hidden>
+      <div class="modal-backdrop" data-close-info></div>
+      <section class="info-sheet" role="dialog" aria-modal="true" aria-labelledby="infoModalTitle">
+        <button class="icon-button" type="button" data-close-info aria-label="Close information popup">
+          <i data-lucide="x"></i>
+        </button>
+
+        <p class="eyebrow" id="infoModalEyebrow">netbase</p>
+        <h2 id="infoModalTitle">About us</h2>
+        <div class="info-content" id="infoModalBody"></div>
+      </section>
+    </div>
+
+    <div class="chat-widget" id="chatWidget">
+      <button class="chat-launcher" type="button" id="chatLauncher" aria-expanded="false" aria-controls="supportChat">
+        <span>
+          <strong>What can I help you with?</strong>
+        </span>
+        <span class="chat-icon">
+          <img src="./assets/ai-chat-support.png" alt="AI chat support" />
+        </span>
+      </button>
+
+      <section class="chat-window" id="supportChat" aria-label="AI support chat" hidden>
+        <header class="chat-head">
+          <div>
+            <strong>netbase AI</strong>
+            <span><i></i> Online</span>
+          </div>
+          <button class="chat-close" type="button" id="chatClose" aria-label="Close chat">
+            <i data-lucide="x"></i>
+          </button>
+        </header>
+
+        <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+
+        <div class="quick-replies" aria-label="Quick support questions">
+          <button type="button" data-chat-question="When will my recharge be active?">Activation time</button>
+          <button type="button" data-chat-question="What data do I get?">Data plan</button>
+          <button type="button" data-chat-question="Which OTT apps are free?">OTT apps</button>
+          <button type="button" data-chat-question="What if payment fails?">Refund</button>
+          <button type="button" data-chat-question="Can I change my operator?">Operator</button>
+          <button type="button" data-chat-question="How do I track my order?">Track order</button>
+        </div>
+
+        <form class="chat-form" id="chatForm">
+          <input id="chatInput" type="text" autocomplete="off" placeholder="Ask about recharge, OTT, refund..." />
+          <button type="submit" aria-label="Send message">
+            <i data-lucide="send"></i>
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
